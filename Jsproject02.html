@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="Jsproject02.css"/>
+        <title>โปรแกรมบัญชีรายรับ-รายจ่าย</title>
+    </head>
+    <body>
+        <h3>โปรแกรมบัญชีรายรับ-รายจ่าย</h3>
+        <div class="container">
+            <h4>ยอดคงเหลือ (บาท)</h4>
+            <h1 id="balance">฿0.00</h1>
+            <div class="income-expense-container">
+                <div>
+                    <h4>รายรับ</h4>
+                    <p id="money-plus" class="money plus">฿5000</p>
+                </div>
+                <div>
+                    <h4>รายจ่าย</h4>
+                    <p id="money-minus" class="money minus">฿200</p>
+                </div>
+            </div>
+            <h3>ประวัติธุระกรรม</h3>
+            <ul id="list" class="list">
+            </ul>
+            <h3>เพิ่มธุระกรรม</h3>
+            <form id="form">
+                <div class="form-control">
+                    <label for="text">ชื่อธุรกรรม</label>
+                    <input type="text" id="text" placeholder="ระบุธุระกรรม"/>
+                </div>
+                <div class="form-control">
+                    <label for="amount">จำนวนเงิน</label><br>
+                    (+ รายรับ ,- รายจ่าย)
+                    <input type="number" id="amount" placeholder="ระบุจำนวนเงิน"/>
+                </div>
+                <button class="btn">เพิ่มธุระกรรม</button>
+            </form>
+        </div>
+        <script src="Jsproject02.js"></script>
+    </body>
+</html>
